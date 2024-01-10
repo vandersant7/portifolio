@@ -1,0 +1,30 @@
+
+.header-container {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    cursor: default;
+}
+
+.menu {
+    display: flex;
+    font-size: 2.6rem;
+}
+
+.menu li {
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: all 300ms ease-in-out;
+}
+
+
+.menu li:hover{
+    background-color: rgba(0, 0, 0, .05);
+    width: 100%;
+}
