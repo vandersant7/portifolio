@@ -1,88 +1,47 @@
-.menu {
+.menu-desktop li {
+    padding: 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-desktop li:hover {
     display: flex;
-    font-size: 2.6rem;
+    align-items: center;
+    padding: .5rem;
+    background-color: darkgreen;
+    border-radius: 2rem;
+    transition: 0.5s ease-in-out;
 }
 
-.menu li {
-    padding: 1rem 3.5rem;
-    border-radius: 50px;
-    transition: all 300ms ease-in-out;
-}
-
-
-.menu li:hover{
-    background-color: white;
-    width: 100%;
-}
-
-.menu a:hover {
+.menu-desktop li a:hover {
     color: var(--secondary-color);
     font-weight: 600;
 }
 
-.menu-hamburguer {
+.menu-mobile {
     display: none;
+    justify-content: center;
     height: 30px;
     width: 27px;
-    position: absolute;
-    top: 20px;
-    right: 55px;
-    background-color: transparent;
-    border: none;
     cursor: pointer;
+    position: absolute;
+    right: 3rem;
 }
 
-.menu-hamburguer span {
-    border-top: 2px solid black;
+.menu-mobile span {
+    border-top: 2px solid var(--primary-color);
     width: 100%;
+    transition: 0.5s ease-in-out;
     position: absolute;
 }
 
-.menu-hamburguer span::after,
-.menu-hamburguer span::before {
+.menu-mobile span::after,
+.menu-mobile span::before {
     content: "";
     display: block;
     position: relative;
-    border-bottom: 2px solid;
+    border-top: 2px solid var(--primary-color);
     margin-top: 7px;
-    transition: .3s;
+    transition: 0.5s ease-in-out;
+    z-index: 9999;
 }
 
-
-@media (max-width: 768px) {
-
-    .menu-hamburguer {
-        display: block;
-    }
-
-    nav .menu {
-        display: none;
-        padding: 0 10px;
-        width: 200px;
-        text-align: right;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        transition: .7s;
-    }
-
-    nav.active .menu {
-        display: block;
-    }
-
-    nav.active .menu-hamburguer span {
-        border-top: transparent;
-    }
-
-    nav.active .menu-hamburguer span::after {
-        transform: rotate(135deg);
-        border-color: brown;
-    }
-
-    nav.active .menu-hamburguer span::before {
-        transform: rotate(-135deg);
-        border-color: brown;
-        top: 9px;
-    }
-
-}

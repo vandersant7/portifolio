@@ -1,78 +1,168 @@
 body {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 62.5%;
+    background-color: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header nav{
+    min-height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: relative;
 }
 
-header {
-    background-color: var(--secondary-color);
-    width: 100vw;
-    position: fixed;
-    z-index: 100;
-}
-
-.header-container {
-    min-height: 75px;
+.menu-desktop {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 10.5rem;
+    gap: 2rem;
 }
 
-.logo {
-    font-size: 2rem;
-    color: white;
-    cursor: default;
+.menu-desktop a {
+    font-size: 1.4rem;
 }
 
+.topo-site {
+    min-height: 83vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
-.home {
-    min-height: 100vh;
-    width: 100%;
-    background: url('../images/fundo.png') center center;
-    background-size: cover;
+.tittle {
+    padding: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 9.6rem;
 }
 
-.home-tittle {
-    width: 80%;
+.tittle h1 {
+    font-size: 4rem;
+    font-weight: 700;
 }
 
-.home-tittle p:nth-child(n+2):nth-child(-n+3) {
-    text-align: center;
-}
-
-.home-tittle p:nth-child(2){
-    color: var(--secondary-color);
-    font-weight: 600;
-}
-
-.home-tittle span {
-    font-size: 5rem;
+.tittle span {
+    font-size: 2rem;
 }
 
 .redes-sociais {
-    background-color: var(--secondary-color);
-    min-height: 100vh;
-    width: 107px;
-    position: fixed;
-    right: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.redes-sociais i:hover, .contact p:hover, .contact i:hover {
+    color: darkgreen;
+    transition: 0.5s ease-in-out;
+}
+
+.profile {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
 }
 
 .about {
-    height: 100vh;
-    padding: 20%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: var(--third-color);
 }
 
-.about p {
-    font-size: 2rem;
+.about-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.about p span {
-    font-weight: 600;
+.about .profile-2 {
+    max-width: 400px;
+    height: 100%;
+    padding: 2rem;
+
+}
+
+.about-txt {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 4rem;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects-grid {
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.project img {
+    max-width: 768px;
+    object-fit: contain;
+    margin-bottom: .5rem;
+}
+
+.project button {
+    border: 2px solid var(--primary-color);
+    padding: .5rem;
+    margin-bottom: .4rem;
+    transition: 0.5s ease-in-out;
+}
+
+.project button:hover {
+    background-color: darkgreen;
+}
+
+
+.project button a {
+    font-size: 1.2rem;
+}
+
+.contact {
+    min-height: 4rem;
+    padding: 2rem;
+    background-color: var(--third-color);
+    font-size: 1.4rem;
+}
+
+.contact .info {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 2rem;
+    font-size: 1rem;
 }

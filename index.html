@@ -1,73 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Evandro Santos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evandro Santos - Desenvolvedor Frontend</title>
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/variables.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/menu.css" />
+  <link rel="stylesheet" href="./src/css/responsivo.css">
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/menu.css">
-    <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <a href="/" class="logo">
-                <h1>Evandro J Santos</h1>
-            </a>
+  <header>
+    <nav class="menu">
+      <div class="logo"><a href="#topo-site">E.S. Dev</a></div>
 
-            <nav class="nav-menu">
-                <button class="menu-hamburguer">
-                    <span></span>
-                </button>
+      <button class="menu-mobile">
+        <span></span>
+      </button>
 
-                <ul class="menu">
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
+      <ul class="menu-desktop">
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="topo-site" id="topo-site">
+      <div class="tittle">
+        <h1>Evandro Santos</h1>
+        <span>Desenvolvedor Frontend</span>
+        <div class="redes-sociais">
+          <a href="https://www.linkedin.com/in/evandrojsantos/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/vandersant7" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://instagram.com/vandersan_" target="_blank"><i class="bi bi-instagram"></i></a>
         </div>
-    </header>
+      </div>
 
-    <main>
+      <div class="profile">
+        <img src="./src/images/images.jpg" alt="imagem de perfil" />
+      </div>
+    </section>
 
-        <section class="home" id="home">
-            <div class="home-tittle">
-                <p>Welcome, <span>I am</span></p>
-                <p class="name">Evandro Santos</p>
-                <p>Frontend Developer</p>
-            </div>
+    <section class="about" id="about">
+      <h2>Sobre mim</h2>
 
-            <div class="redes-sociais"></div>
+      <div class="about-flex">
+        <div class="profile-2">
+          <img src="./src/images/images.jpg" alt="foto de perfil" />
+        </div>
 
-        </section>
+        <div class="about-txt">
+          <p>
+            Impulsionado pela minha paixão pela tecnologia, decidi realizar
+            uma transição de carreira para a área tecnológica no final de
+            2023. Desde 2004, quando recebi meu primeiro computador,
+            desenvolvi habilidades autodidatas explorando as funcionalidades
+            do Windows e dos aplicativos do pacote Office, além de criar um
+            blog sobre games e tecnologia. Formado em Biologia desde 2010,
+            elaborei e coordenei vários projetos interdisciplinares. Aprimorei
+            habilidades como comunicação e trabalho em equipe. Atualmente,
+            direciono meu foco para a áread de desenvolvimento web. Minhas
+            experiências anteriores, certamente contribuirão para o sucesso da
+            minha nova jornada como Desenvolvedor Frontend.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section class="about" id="about">
-            <p>Olá, meu nome é Evandro e estou procurando minha primeira oportunidade como Desenvolvedor Frontend. Sou apaixonado por tecnologia. Estou sempre atualizado com as tecnologias modernas do mercado e ofereço soluções inovadoras. Estou ansioso para crescer em projetos desafiadores e contribuir para o sucesso da equipe. Minhas especialidades são: <span>JavaScript, CSS3, HTML5, GIT & GitHub</span></p>
-        </section>
+    <section class="projects" id="projects">
+      <h2>Meus projetos</h2>
 
-        <section id="projects">
+      <div class="projects-grid">
+        <div class="project project-1">
+          <h3>Landing Page Agencia</h3>
+          <img src="./src/images/landing-page-agencia.png" alt="Projeto lading page agencia" />
+          <button>
+            <a href=""><i class="bi bi-link-45deg"></i>Visualizar</a>
+          </button>
+        </div>
 
-        </section>
+        <div class="project project-2">
+          <h3>Projeto One Piece</h3>
+          <img src="./src/images/one-piece.png" alt="Projeto One Piece" />
+          <button>
+            <a href=""><i class="bi bi-link-45deg"></i>Visualizar</a>
+          </button>
+        </div>
 
-        <section id="contact">
+        <div class="project project-3">
+          <h3>Gerador de Conselhos</h3>
+          <img src="./src/images/app-gerador-de-conselhos.png" alt="Projeto Gerador de Conselhos" />
+          <button>
+            <a href=""><i class="bi bi-link-45deg"></i>Visualizar</a>
+          </button>
+        </div>
 
-        </section>
+        <div class="project project-4">
+          <h3>App previsão do tempo</h3>
+          <img src="./src/images/app-previsao-tempo.png" alt="Aplicativo de consulta previsão do tempo" />
+          <button>
+            <a href=""><i class="bi bi-link-45deg"></i>Visualizar</a>
+          </button>
+        </div>
+      </div>
+    </section>
 
-        <footer id="footer">
+    <section class="contact" id="contact">
+      <h2>Contato</h2>
 
-        </footer>
+      <div class="info">
+        <i class="bi bi-whatsapp">(71) 99339-2927</i> 
+        <i class="bi bi-envelope-at-fill">vandersant7@gmail.com</i> 
+      </div>
 
-    </main>
+      <div class="redes-sociais">
+        <a href="https://www.linkedin.com/in/evandrojsantos/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/vandersant7" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://instagram.com/vandersan_" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </section>
+  </main>
 
-    <script type="module" src="./src/js/index.js"></script>
+  <footer>
+    <p>© 2024 Todos os direitos reservados</p>
+  </footer>
+
+  <script src="./src/js/menu.js"></script>
 </body>
 
 </html>

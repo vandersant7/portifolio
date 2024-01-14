@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+  .menu-mobile {
+    display: flex;
+  }
+
+  nav .menu-desktop {
+    display: none;
+    padding: 0 10px;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: var(--third-color);
+    text-align: right;
+    position: absolute;
+    top: 7.5rem;
+    right: 0;
+    min-height: 100vh;
+    max-width: 100%;
+    z-index: 8888;
+  }
+
+  nav .menu-desktop li {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  nav .menu-desktop li a {
+    font-size: 3rem;
+  }
+
+  nav.active .menu-desktop {
+    display: block;
+  }
+
+  nav.active .menu-mobile span {
+    border-top: transparent;
+  }
+
+  nav.active .menu-mobile span::after {
+    transform: rotate(135deg);
+    border-color: brown;
+  }
+
+  nav.active .menu-mobile span::before {
+    transform: rotate(-135deg);
+    border-color: brown;
+    top: 9px;
+  }
+
+  .topo-site {
+    z-index: 1;
+    display: flex;
+  }
+
+  .topo-site .profile {
+    display: none;
+  }
+
+  .about-flex,
+  .project,
+  .projects-grid,
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .topo-site {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+  }
+
+  .topo-site .tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topo-site .tittle h1 {
+    font-size: 3rem;
+  }
+
+  .topo-site .profile {
+    display: none;
+  }
+
+  .about {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .profile-2 img {
+    max-width: 350px;
+  }
+
+  .about-txt {
+    max-width: 500px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .tittle,
+  .profile,
+  .projects-grid,
+  .contact {
+    padding: 1.5rem;
+  }
+
+  .contact p,
+  footer p {
+    font-size: 1.1rem;
+  }
+}
